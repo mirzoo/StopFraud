@@ -1,0 +1,54 @@
+.main
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 100px 16px
+        padding-bottom: 0
+    &-info
+        max-width: 420px
+        &__title
+            font-size: 32px
+            color: #FFFFFF
+            font-weight: 900
+            margin-bottom: 32px
+        &__green
+            color: #2AAD49
+    &-content
+        position: relative
+        width: 500px
+        height: 480px
+        overflow: hidden
+
+
+
+@media (max-width: 1024px)
+    .main
+        &-wrap
+            padding-bottom: 0
+
+
+@media (max-width: 768px)
+    .main
+        &-wrap
+            padding-bottom: 0
+        &-info
+            width: 380px
+            &__title
+                font-size: 24px
+        &-content
+            width: 400px
+            height: 400px
+
+
+@media (max-width: 425px)
+    .main
+        &-wrap
+            flex-direction: column
+        &-info
+            text-align: center
+            margin-bottom: 32px
+            width: 350px
+        &-content
+            width: 280px
+            height: 300px
